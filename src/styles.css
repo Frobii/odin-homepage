@@ -1,4 +1,58 @@
-.test {
-    color:turquoise;
-    font-size:4rem;
+
+
+body {
+    margin: 0px;
+}
+.about-me {
+    min-width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+.portrait {
+    background-image: url(../assets/images/about\ me\ stock.jpg);
+    background-size: 20rem auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 20rem;
+    min-width: 20rem;
+    box-shadow: 0px 0px 10px -1px rgba(83, 83, 83, 0.75);
+}
+.name {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    color: white;
+    text-shadow: black 2px 0 10px;
+    font-size: 2.5rem;
+}
+.info {
+    padding: 1rem;
+    max-width: 20rem;
+    box-shadow: 0px 0px 10px -2px rgba(83, 83, 83, 0.75);
+}
+.info-header {
+    margin-top: 10px;
+}
+.info-footer {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 50px;
+}
+.link {
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    margin-left: 1rem;
+}
+.link-1 {
+    background-image: url(../assets/icons/jpeg-files/github.jpg);
+}
+.link-2 {
+    background-image: url(../assets/icons/jpeg-files/linkedin.jpg);
 }
