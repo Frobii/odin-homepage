@@ -35,12 +35,12 @@ const config = {
                 use: [stylesHandler,'css-loader'],
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                test: /\.(ttf|woff|woff2|png|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
             },
             {
-                test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-                type: 'asset',
+                test: /\.svg$/,
+                loader: 'svg-inline-loader'
             },
 
             // Add your rules for custom modules here
@@ -52,8 +52,6 @@ const config = {
 module.exports = () => {
     if (isProduction) {
         config.mode = 'production';
-        
-        
     } else {
         config.mode = 'development';
     }
