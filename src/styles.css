@@ -12,7 +12,7 @@ body {
     transform: skewY(-14deg) translateY(-84rem);
     box-shadow: 0px 0px 10px 0px rgba(83, 83, 83, 0.75);
 }
-.about-me {
+.header {
     min-width: 40vw;
     display: flex;
     justify-content: center;
@@ -39,16 +39,16 @@ body {
     text-shadow: black 2px 0 10px;
     font-size: 2.5rem;
 }
-.info {
+.about-me {
     background-color: white;
     padding: 1rem;
     max-width: 20rem;
     box-shadow: 0px 0px 10px 0px rgba(83, 83, 83, 0.75);
 }
-.info-header {
+.about-me-header {
     margin-top: 10px;
 }
-.info-footer {
+.about-me-footer {
     padding-top: 1rem;
     display: flex;
     flex-direction: row-reverse;
@@ -60,9 +60,9 @@ body {
     width: 50px;
     margin-left: 1rem;
 }
-.link-1 {
+.about-me-link-1 {
     background-image: url(../assets/icons/jpeg-files/github.jpg);
 }
-.link-2 {
+.about-me-link-2 {
     background-image: url(../assets/icons/jpeg-files/linkedin.jpg);
 }
