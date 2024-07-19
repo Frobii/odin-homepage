@@ -1,6 +1,6 @@
 :root {
     --page-padding: 3rem;
-    --primary-container-width: 47rem;
+    --primary-container-width: 46rem;
 }
 body {
     margin: 0px;
@@ -18,7 +18,7 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    transform: skewY(-14deg) translateY(-84rem);
+    transform: skewY(-12deg) translateY(-84rem);
     box-shadow: 0px 0px 10px 0px rgba(83, 83, 83, 0.75);
 }
 .header {
@@ -61,19 +61,19 @@ body {
     padding-top: 1rem;
     display: flex;
     flex-direction: row-reverse;
-    height: 50px;
+    height: 25px;
 }
 .link {
     background-position: center;
     background-size: cover;
-    width: 50px;
+    width: 25px;
     margin-left: 1rem;
 }
 .about-me-link-1 {
-    background-image: url(../assets/icons/jpeg-files/github.jpg);
+    background-image: url(../assets/icons/png-files/linkedin.png);
 }
 .about-me-link-2 {
-    background-image: url(../assets/icons/jpeg-files/linkedin.jpg);
+    background-image: url(../assets/icons/png-files/github.png);
 }
 .my-work {
     padding: var(--page-padding);
@@ -87,7 +87,43 @@ body {
     gap: 2rem;
 }
 .project {
-    height: 14rem;
-    width: 12rem;
-    background-color: grey;
+    height: 16rem;
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 6px 0px rgba(83, 83, 83, 0.75);
+}
+.project-screenshot {
+    height: 65%;
+}
+.project-details {
+    height: 10%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.project-description {
+    height: 25%;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+}
+.project-links {
+    width: 60px;
+    display: flex;
+}
+.project-link {
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+.project-github-link {
+    background-image: url(../assets/icons/png-files/github.png);
+    
+}
+.project-page-link {
+    background-image: url(../assets/icons/png-files/open-in-new.png);
 }
