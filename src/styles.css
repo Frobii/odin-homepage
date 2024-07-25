@@ -122,8 +122,29 @@ body {
 }
 .project-github-link {
     background-image: url(../assets/icons/png-files/github.png);
-    
 }
 .project-page-link {
     background-image: url(../assets/icons/png-files/open-in-new.png);
+}
+.project-screenshot {
+    background-position: top;
+    background-size: cover;
+}
+.screenshot-1 {
+    background-image: url(../assets/images/battleship.png);
+}
+.screenshot-2 {
+    background-image: url(../assets/images/weather\ app.png);
+}
+.screenshot-3 {
+    background-image: url(../assets/images/tic\ tac\ toe.png);
+}
+.screenshot-4 {
+    background-image: url(../assets/images/odin\ library.png);
+}
+.screenshot-5 {
+    background-image: url(../assets/images/admin\ dashboard.png);
+}
+.screenshot-6 {
+    background-image: url(../assets/images/sign\ up\ form.png);
 }
