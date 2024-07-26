@@ -1,6 +1,8 @@
 :root {
     --page-padding: 3rem;
     --primary-container-width: 46rem;
+    --primary-background-color: rgb(27, 159, 199);
+    --primary-font-color: white;
 }
 body {
     margin: 0px;
@@ -14,7 +16,7 @@ body {
     position: absolute;
     width: 150%;
     height: 100rem;
-    background-color: rgb(27, 159, 199);
+    background-color: var(--primary-background-color);
     top: 0;
     left: 0;
     z-index: -1;
@@ -44,7 +46,7 @@ body {
     bottom: 0;
     margin: 0;
     width: 100%;
-    color: white;
+    color: var(--primary-font-color);
     text-shadow: black 2px 0 10px;
     font-size: 2.5rem;
 }
@@ -78,6 +80,7 @@ body {
 .my-work {
     padding: var(--page-padding);
     max-width: var(--primary-container-width);
+    padding-top: 0px;
 }
 .projects-container {
     display: flex;
@@ -147,4 +150,11 @@ body {
 }
 .screenshot-6 {
     background-image: url(../assets/images/sign\ up\ form.png);
+}
+.contact-me {
+    background-color: var(--primary-background-color);
+    max-width: var(--primary-container-width);
+    color: var(--primary-font-color);
+    padding: var(--page-padding);
+    padding-top: 0px;
 }
