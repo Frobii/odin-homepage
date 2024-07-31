@@ -3,8 +3,34 @@
     --primary-container-width: 46rem;
     --primary-background-color: #0891b2;
 }
+@font-face {
+    font-family: 'playfair-display';
+    src: url(/assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(/assets/fonts/Roboto/Roboto-Regular.ttf);
+}
 body {
+    font-family: roboto;
+    font-weight: lighter;
     margin: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+    font-family: playfair-display;
+    font-weight: normal;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 200;
+}
+h3 {
+    font-size: 1rem;
 }
 .header, .main, .footer {
     display: flex;
@@ -21,7 +47,7 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    transform: skewY(-12deg) translateY(-84rem);
+    transform: skewY(-12deg) translateY(-80.5rem);
     box-shadow: 0px 0px 10px 0px rgba(83, 83, 83, 0.75);
 }
 .about-me {
@@ -39,7 +65,7 @@ body {
     position: relative;
     height: 20rem;
     min-width: 20rem;
-    box-shadow: 0px 0px 10px 1px rgba(83, 83, 83, 0.75);
+    box-shadow: 0px 0px 10px 1px rgba(83, 83, 83, 0.6);
 }
 .name {
     position: absolute;
@@ -49,7 +75,7 @@ body {
     width: 100%;
     color: white;
     text-shadow: black 2px 0 10px;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
 }
 .about-me-content {
     line-height: 1.5rem;
@@ -83,6 +109,10 @@ body {
     max-width: var(--primary-container-width);
     padding-top: 0px;
 }
+.my-work-header {
+    margin-top: 2.5rem;
+    margin-bottom: 10px;
+}
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -95,7 +125,7 @@ body {
     width: 14rem;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 6px 0px rgba(83, 83, 83, 0.75);
+    box-shadow: 3px 4px 10px -1px rgba(0,0,0,0.3);
 }
 .project-screenshot {
     height: 65%;
@@ -104,7 +134,7 @@ body {
     height: 10%;
     box-sizing: border-box;
     padding: 0.5rem;
-    padding-left: 1rem;
+    padding-left: 0.8rem;
     display: flex;
     justify-content: space-between;
 }
@@ -154,24 +184,33 @@ body {
 }
 .footer {
     background-color: var(--primary-background-color);
+    margin-top: 3rem;
 }
 .contact-me {
-    max-width: var(--primary-container-width);
+    width: var(--primary-container-width);
     color: white;
     padding: var(--page-padding);
-    padding-top: 0px;
-    margin-top: 1rem;
     display: flex;
+    justify-content: space-between
 }
 .contact-information {
     max-width: var(--primary-container-width);
 }
-.contact-information > *:not(:last-child) {
+.contact-information > *:not(:last-child, :first-child) {
     margin: 1.5rem 0rem;
 }
+.contact-title {
+    margin-top: 0px;
+}
 .contact-links {
+    display: flex;
+}
+.contact-link {
     background-position: center;
     background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
 }
 .github-contact-link {
     background-image: url(../assets/icons/png-files/github.png);
@@ -179,3 +218,29 @@ body {
 .linkedin-contact-link {
     background-image: url(../assets/icons/png-files/linkedin.png);
 }
+.contact-image {
+    background-position: center;
+    background-size: cover;
+    width: 26rem;
+    height: 22rem;
+    background-image: url(../assets/images/contact\ me\ stock.jpg);
+}
+.phone-number-container, .email-address-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.contact-icon {
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+.phone-icon {
+    background-image: url(../assets/icons/png-files/phone-outline.png);
+}
+.email-icon {
+    background-image: url(../assets/icons/png-files/email-outline.png);
+}
+/*  remember to add icons to the phone number and email address
+    also import fonts recommended by T.O.P. */
