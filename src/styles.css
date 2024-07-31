@@ -175,10 +175,11 @@ h3 {
     background-image: url(../assets/images/weather\ app.png);
 }
 .screenshot-3 {
-    background-image: url(../assets/images/odin\ library.png);
+    background-image: url(../assets/images/tic\ tac\ toe.png);
 }
 .screenshot-4 {
-    background-image: url(../assets/images/tic\ tac\ toe.png);
+    background-size: 235px;
+    background-image: url(../assets/images/odin\ library.png);
 }
 .screenshot-5 {
     background-image: url(../assets/images/admin\ dashboard.png);
